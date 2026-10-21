@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-caja: gray;
+  --color-caja: white;
+  --height-caja: 45px;
+  --font-size-caja: 1.4rem;
+}
+
+#bloque {
+  padding: 4px;
+}
+
+/* cada fila es una caja flex */
+.fila {
+  display: flex;
+}
+
+/* flex: 1 hace que todas las cajas de una fila crezcan igual
+   y se repartan el ancho, haya las que haya */
+.fila > div {
+  flex: 1;
+  height: var(--height-caja);
+  margin: 3px;
+  padding: 5px 10px;
+  background-color: var(--background-color-caja);
+  color: var(--color-caja);
+  font-size: var(--font-size-caja);
+}

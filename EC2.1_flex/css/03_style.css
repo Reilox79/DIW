@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-cabecera: #333333;
+  --color-cabecera-h1: white;
+  --background-color-catalogo: #aaaaaa;
+  --border-figure: 1px dashed #555555;
+  --font-size-cabecera-h1: 3rem;
+}
+
+#cabecera {
+  background-color: var(--background-color-cabecera);
+  padding: 30px;
+}
+
+#cabecera h1 {
+  color: var(--color-cabecera-h1);
+  font-size: var(--font-size-cabecera-h1);
+  font-weight: normal;
+}
+
+/* cada figure ocupa la misma parte del ancho (flex: 1) */
+#catalogo {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color-catalogo);
+  padding: 12px 8px;
+}
+
+#catalogo figure {
+  flex: 1;
+  margin: 0 24px;
+  padding: 25px;
+  border: var(--border-figure);
+}
+
+#catalogo figure:first-child {
+  margin-left: 0;
+}
+
+#catalogo figure:last-child {
+  margin-right: 0;
+}
+
+#catalogo img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,68 @@
+TEXTOS PARA EL MURO DE INSPIRACIÓN (copia y pega bajo cada captura)
+Capturas hechas el 1 oct 2026. Colores y fuentes extraídos del CSS real de cada web.
+
+===== TÍTULO PRINCIPAL =====
+Muro de Inspiración · Vita
+
+===== CATEGORÍA: COLOR =====
+
+[06-noom.png]  Noom
+https://www.noom.com
+Dato: fondo crema #F6F4EE, principal #1D3A44, acento salvia #C8E3B1.
+Decisión: fondo cálido (bg/page #FAF8F3) y familia verde para la marca; mi teal es #0E8F76.
+
+[03-strava.png]  Strava
+https://www.strava.com
+Dato: acento naranja #FC5200 sobre blanco; botón de registro en naranja.
+Decisión: un único color cálido para la acción: acento coral #FF7A45 solo en CTA.
+
+[01-headspace.png]  Headspace
+https://www.headspace.com
+Dato: fondo #F9F4F2, botón #0061EF, radio de botón 32 px.
+Decisión: botones en píldora (radius/full) y tarjetas muy redondeadas (radius/lg).
+
+[02-calm.png]  Calm
+https://www.calm.com
+Dato: titular azul marino #1A3E6F, fondo #F7F7F7, botones de 100 px de radio.
+Decisión: títulos en marino oscuro (#1B2A41) en vez de negro: color/secondary y text/primary.
+
+===== CATEGORÍA: TIPOGRAFÍA =====
+
+[09-google-fonts-poppins.png]  Google Fonts · Poppins
+https://fonts.google.com/specimen/Poppins
+Dato: clasificada como "Sans Serif — Geometric"; sensaciones: Calm, Sincere, Competent.
+Decisión: Poppins para encabezados (font/heading/family).
+
+[05-peloton.png]  Peloton
+https://www.onepeloton.com
+Dato: fuente Inter, h1 de 48 px, fondo #F5F7F9.
+Decisión: Inter para párrafos (font/body/family).
+
+[07-myfitnesspal.png]  MyFitnessPal
+https://www.myfitnesspal.com
+Dato: también Inter; h1 de 68 px, cuerpo de 14 px.
+Decisión: Inter funciona en apps de salud; mi Display es de 56 px.
+
+===== CATEGORÍA: ICONOS =====
+
+[08-lucide.png]  Lucide
+https://lucide.dev/icons/
+Dato: 1.854 iconos de trazo; valores por defecto: trazo 2 px, tamaño 24 px.
+Decisión: icon/stroke = 2 e icon/size/md = 24; mis 7 iconos están dibujados en ese estilo.
+
+===== CATEGORÍA: LAYOUT / COMPOSICIÓN =====
+
+[04-apple-fitness.png]  Apple Fitness+
+https://www.apple.com/apple-fitness-plus/
+Dato: titular enorme centrado y un solo botón en píldora (#AAFF00).
+Decisión: hero con titular Display y un CTA principal; sin foto uso un bloque de color con cifra.
+
+[01-headspace.png]  Headspace (tarjetas)  ← vuelve a usar la misma captura 01
+https://www.headspace.com
+Dato: bloques de tarjetas redondeadas con título y botón sobre fondo crema.
+Decisión: sección de tres Feature Card sobre color/bg/muted.
+
+[03-strava.png]  Strava (registro)  ← vuelve a usar la misma captura 03
+https://www.strava.com
+Dato: formulario centrado con botones apilados.
+Decisión: página 2: titular a la izquierda y tarjeta de formulario a la derecha.

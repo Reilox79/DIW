@@ -1,0 +1,12 @@
+# Configuración local de Claude
+.claude/
+
+# Comprimidos y duplicados descargados
+*.zip
+bento-grid-main (1)/
+
+# Notas personales de seguimiento
+PENDIENTE.md
+
+.DS_Store
+Thumbs.db

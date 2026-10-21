@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-cabecera: #333333;
+  --color-cabecera-h1: white;
+  --background-color-texto-h2: lightgray;
+  --border-tarjeta: 2px solid black;
+  --font-size-cabecera-h1: 2.8rem;
+  --width-tarjeta-img: 100px;
+}
+
+#cabecera {
+  background-color: var(--background-color-cabecera);
+  padding: 25px 5px;
+}
+
+#cabecera h1 {
+  color: var(--color-cabecera-h1);
+  font-size: var(--font-size-cabecera-h1);
+  font-weight: normal;
+}
+
+/* las 4 tarjetas se reparten el ancho por igual */
+#catalogo {
+  display: flex;
+  padding: 12px 10px;
+}
+
+/* cada tarjeta es a su vez una caja flex: imagen a la izquierda, texto a la derecha.
+   La imagen se estira (align-items: stretch por defecto) hasta la altura del texto */
+.tarjeta {
+  flex: 1;
+  display: flex;
+  margin: 0 10px;
+  border: var(--border-tarjeta);
+}
+
+.tarjeta img {
+  width: var(--width-tarjeta-img);
+}
+
+.texto {
+  flex: 1;
+  border-left: var(--border-tarjeta);
+}
+
+.texto h2 {
+  padding: 5px;
+  border-bottom: var(--border-tarjeta);
+  background-color: var(--background-color-texto-h2);
+  text-align: center;
+}
+
+.texto p {
+  padding: 5px;
+  font-size: 0.9rem;
+  text-align: justify;
+}

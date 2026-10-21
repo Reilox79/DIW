@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-cabecera: #333333;
+  --color-cabecera-h1: white;
+  --background-color-menu: #cccccc;
+  --color-menu-a: #555555;
+  --border-menu-li: 1px solid #e6e6e6;
+  --font-size-cabecera-h1: 3rem;
+}
+
+#cabecera {
+  background-color: var(--background-color-cabecera);
+  padding: 30px;
+}
+
+#cabecera h1 {
+  color: var(--color-cabecera-h1);
+  font-size: var(--font-size-cabecera-h1);
+  font-weight: normal;
+}
+
+#menu {
+  background-color: var(--background-color-menu);
+}
+
+/* el ul es la caja flex: reparte los 4 enlaces dejando el mismo espacio alrededor */
+#menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#menu li {
+  border-left: var(--border-menu-li);
+  border-right: var(--border-menu-li);
+}
+
+#menu a {
+  display: block;
+  padding: 15px;
+  color: var(--color-menu-a);
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background-color: #b3b3b3;
+}

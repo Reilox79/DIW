@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Tarea 8 - Formulario flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/08_style.css" />
+  </head>
+  <body>
+    <form id="formulario">
+      <div class="fila">
+        <label for="nombre">First name</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Enter your first name here" />
+      </div>
+      <div class="fila">
+        <label for="apellido">Last name</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Enter your last name here" />
+      </div>
+      <div class="fila">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email here" />
+      </div>
+      <div class="fila">
+        <label for="telefono">Phone</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Enter your phone here" />
+      </div>
+      <div class="fila">
+        <label for="mensaje">Message</label>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Enter your message here"></textarea>
+      </div>
+      <div class="fila">
+        <span class="etiqueta">Age</span>
+        <div class="opciones">
+          <label><input type="checkbox" name="edad" value="20-29" /> 20-29</label>
+          <label><input type="checkbox" name="edad" value="30-39" /> 30-39</label>
+          <label><input type="checkbox" name="edad" value="40-49" /> 40-49</label>
+          <label><input type="checkbox" name="edad" value="50-59" /> 50-59</label>
+          <label><input type="checkbox" name="edad" value="60+" /> &gt;60</label>
+        </div>
+      </div>
+      <div class="fila">
+        <span class="etiqueta"></span>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>

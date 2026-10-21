@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-body: #008080;
+  --color-texto: white;
+  --border-campo: 1px solid #555555;
+  --border-campo-focus: 2px solid #ffd166;
+  --background-color-boton: #ffd166;
+  --color-boton: #005f5f;
+  --border-radius-boton: 5px;
+  --font-family-campo: Arial, sans-serif;
+  --width-etiqueta: 240px;
+  --max-width-formulario: 780px;
+}
+
+body {
+  background-color: var(--background-color-body);
+  color: var(--color-texto);
+}
+
+#formulario {
+  max-width: var(--max-width-formulario);
+  padding: 45px 20px;
+  margin: 0 auto;
+}
+
+/* cada fila es una caja flex: etiqueta a la izquierda y campo a la derecha,
+   centrados en vertical */
+.fila {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.fila > label,
+.etiqueta {
+  width: var(--width-etiqueta);
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* el campo ocupa todo el espacio que deja la etiqueta */
+.fila input[type="text"],
+.fila input[type="email"],
+.fila input[type="tel"],
+.fila textarea {
+  flex: 1;
+  padding: 14px;
+  border: var(--border-campo);
+  font-family: var(--font-family-campo);
+  font-size: 1rem;
+}
+
+.fila input:focus,
+.fila textarea:focus {
+  outline: var(--border-campo-focus);
+}
+
+/* las casillas de edad también van en fila */
+.opciones {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.opciones label {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.opciones input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: var(--border-radius-boton);
+  background-color: var(--background-color-boton);
+  color: var(--color-boton);
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}

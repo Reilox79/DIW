@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Documentación - Sistema de Diseño Vita</title>
+<style>
+@page{size:A4;margin:18mm}
+body{font-family:'Segoe UI',Arial,sans-serif;color:#1B2A41;line-height:1.5;font-size:11pt}
+h1{font-size:26pt;margin:0 0 4pt;color:#0E8F76}
+h2{font-size:16pt;border-bottom:2px solid #0E8F76;padding-bottom:3pt;margin-top:22pt;page-break-after:avoid}
+h3{font-size:12pt;margin:14pt 0 4pt}
+.sub{color:#6B7280;margin-bottom:14pt}
+table{border-collapse:collapse;width:100%;margin:6pt 0;font-size:9.5pt}
+td,th{border:1px solid #E3DED3;padding:4pt 6pt;text-align:left;vertical-align:top}
+th{background:#F3EFE6}
+.sw{display:inline-block;width:12pt;height:12pt;border-radius:3pt;vertical-align:middle;margin-right:5pt;border:1px solid #E3DED3}
+code{background:#F3EFE6;padding:0 3pt;border-radius:3pt;font-size:9.5pt}
+.note{background:#E6F4F1;padding:6pt 10pt;border-radius:6pt;margin:8pt 0}
+.ref{display:flex;gap:10pt;margin:8pt 0;page-break-inside:avoid;align-items:flex-start}
+.ref img{width:200pt;border:1px solid #E3DED3;border-radius:4pt;flex:none}
+.ref div{font-size:9.5pt}.url{color:#0E8F76}.small{font-size:9.5pt;color:#374151}
+</style></head><body>
+<h1>Vita · Sistema de Diseño y Prototipo</h1>
+<div class="sub">Práctica 1.1 · Diseño de Interfaces Web · Rafael Lora Calero<br>Archivo de Figma: «DIW - Sistema de Diseño» (páginas: Muro de Inspiracion, Sistema de Diseño, Prototipo)</div>
+
+<p><b>Producto:</b> landing de una app de fitness y bienestar llamada <i>Vita</i>, con una página de bienvenida y una página de registro conectadas por un botón. Estética: calmada, cercana y energética, con un verde teal como color de marca y un coral de acento para las acciones.</p>
+
+<h2>1. Muro de inspiración</h2>
+<p>Capturé <b>9 páginas web reales</b> el <b>1 de octubre de 2026</b> (pantalla de 1440×900) y las organicé en cuatro categorías. Las capturas están en la carpeta <code>capturas/</code> y en la página <i>Muro de Inspiracion</i> del archivo de Figma. Los colores y las tipografías que cito se extrajeron automáticamente de cada página con una herramienta de scraping (CSS real de la web), no de memoria. Estos valores son los de la web de cada marca en esa fecha y pueden cambiar.</p>
+
+<h3>Color</h3>
+<div class="ref"><img src="capturas/06-noom.png"><div><b>Noom</b> · <span class="url">noom.com</span><br>
+<b>Dato extraído:</b> fondo crema <code>#F6F4EE</code>, color principal verde azulado oscuro <code>#1D3A44</code>, acento verde salvia <code>#C8E3B1</code> (visible en la franja superior y en las tarjetas).<br>
+<b>Decisión:</b> fondo cálido <code>color/bg/page</code> = #FAF8F3 en lugar de blanco puro, y una familia verde para la marca. Mi primario es un teal más vivo (#0E8F76) para que los botones destaquen más que en Noom.</div></div>
+<div class="ref"><img src="capturas/03-strava.png"><div><b>Strava</b> · <span class="url">strava.com</span><br>
+<b>Dato extraído:</b> acento naranja <code>#FC5200</code> sobre fondo blanco; el botón «Sign Up With Email» es el único elemento de color intenso del formulario.<br>
+<b>Decisión:</b> un único color cálido para la acción principal. Mi acento coral (<code>color/accent/default</code> #FF7A45) se reserva para los CTA. La página de Registro copia la idea de la tarjeta de registro centrada con un botón destacado.</div></div>
+<div class="ref"><img src="capturas/01-headspace.png"><div><b>Headspace</b> · <span class="url">headspace.com</span><br>
+<b>Dato extraído:</b> fondo <code>#F9F4F2</code> (blanco cálido), botón primario azul <code>#0061EF</code>, radio de botón 32 px (forma de píldora), tarjetas redondeadas.<br>
+<b>Decisión:</b> botones tipo píldora (<code>radius/full</code>) y tarjetas con esquinas muy redondeadas (<code>radius/lg</code> = 24). No copié su azul: elegí verde para diferenciar el producto.</div></div>
+<div class="ref"><img src="capturas/02-calm.png"><div><b>Calm</b> · <span class="url">calm.com</span><br>
+<b>Dato extraído:</b> titular en azul marino <code>#1A3E6F</code>, fondo <code>#F7F7F7</code>, botones con radio 100 px.<br>
+<b>Decisión:</b> los títulos van en un marino oscuro en vez de negro puro. Mi <code>color/secondary/default</code> (#1B2A41) y <code>color/text/primary</code> parten de esa idea.</div></div>
+
+<h3>Tipografía</h3>
+<div class="ref"><img src="capturas/09-google-fonts-poppins.png"><div><b>Google Fonts · Poppins</b> · <span class="url">fonts.google.com/specimen/Poppins</span><br>
+<b>Dato extraído:</b> la ficha la clasifica como «Sans Serif — Geometric» y con las sensaciones «Calm», «Sincere» y «Competent».<br>
+<b>Decisión:</b> Poppins para encabezados (<code>font/heading/family</code>), porque encaja con un tono calmado y a la vez serio.</div></div>
+<div class="ref"><img src="capturas/05-peloton.png"><div><b>Peloton</b> · <span class="url">onepeloton.com</span><br>
+<b>Dato extraído:</b> fuente <b>Inter</b>, h1 de 48 px, fondo <code>#F5F7F9</code>, botones con radio de 20-28 px.<br>
+<b>Decisión:</b> Inter para el texto de párrafo (<code>font/body/family</code>).</div></div>
+<div class="ref"><img src="capturas/07-myfitnesspal.png"><div><b>MyFitnessPal</b> · <span class="url">myfitnesspal.com</span><br>
+<b>Dato extraído:</b> también usa <b>Inter</b>; h1 de 68 px, cuerpo de 14 px, botones con radio 100 px.<br>
+<b>Decisión:</b> confirma que Inter funciona en apps de salud. Mi titular Display es de 56 px (<code>font/size/display</code>), un tamaño intermedio entre los h1 de 48 px de Peloton y 68 px de MyFitnessPal.</div></div>
+
+<h3>Iconos</h3>
+<div class="ref"><img src="capturas/08-lucide.png"><div><b>Lucide</b> · <span class="url">lucide.dev/icons</span><br>
+<b>Dato extraído:</b> librería de 1.854 iconos de trazo; el configurador muestra valores por defecto de <b>trazo 2 px</b> y <b>tamaño 24 px</b>.<br>
+<b>Decisión:</b> mis 7 iconos son de trazo con esos mismos valores: <code>icon/stroke</code> = 2 y <code>icon/size/md</code> = 24. Las formas (flecha, corazón, check, usuario, correo, llama, play) son dibujos de estilo Lucide hechos por mí.</div></div>
+
+<h3>Layout y composición</h3>
+<div class="ref"><img src="capturas/04-apple-fitness.png"><div><b>Apple Fitness+</b> · <span class="url">apple.com/apple-fitness-plus</span><br>
+<b>Dato extraído:</b> titular enorme y centrado, un solo botón principal en píldora (acento <code>#AAFF00</code>).<br>
+<b>Decisión:</b> hero con titular Display grande y un CTA principal claro. Sustituí la foto a pantalla completa por un bloque de color con una cifra, porque no tengo imágenes propias.</div></div>
+<div class="ref"><img src="capturas/01-headspace.png"><div><b>Headspace</b> · <span class="url">headspace.com</span> (sección bajo el hero)<br>
+<b>Dato observado:</b> bloques de tarjetas redondeadas sobre fondo crema, cada una con título, botón y ayuda visual.<br>
+<b>Decisión:</b> sección de tres <i>Feature Card</i> sobre fondo <code>color/bg/muted</code>.</div></div>
+<div class="ref"><img src="capturas/03-strava.png"><div><b>Strava</b> · <span class="url">strava.com</span> (pantalla de registro)<br>
+<b>Dato observado:</b> formulario centrado entre dos columnas de imagen, con botones apilados.<br>
+<b>Decisión:</b> página 2 con titular a la izquierda y tarjeta de formulario a la derecha, con campos apilados y botón principal.</div></div>
+<p class="small">Resumen de decisiones sacadas del muro: fondos cálidos (Noom, Headspace) · acento cálido único para CTA (Strava) · botones píldora y tarjetas redondeadas (Headspace, Calm) · títulos en marino (Calm) · Poppins + Inter (Google Fonts, Peloton, MyFitnessPal) · iconos de trazo 2 px / 24 px (Lucide).</p>
+
+<h2>2. Sistema de Diseño</h2>
+<p>Todo el sistema se apoya en <b>variables de Figma</b> organizadas en 5 colecciones (99 variables en total). Los componentes y las pantallas no contienen valores sueltos: color, espaciado, radios, tamaños y tipografías están enlazados a variables.</p>
+
+<h3>2.1 Colores (colecciones Primitives y Color)</h3>
+<p>Dos capas: <b>Primitives</b> (17 colores base, con scope vacío para que no aparezcan en los selectores) y <b>Color</b> (24 variables semánticas que son <i>alias</i> de las primitivas). Cambiar una primitiva actualiza todo lo que depende de ella.</p>
+<table><tr><th>Rol</th><th>Variables</th><th>Valor base</th></tr>
+<tr><td>Primario</td><td><code>color/primary/default · hover · pressed · subtle</code></td><td><span class="sw" style="background:#0E8F76"></span>#0E8F76 / #0B7863 / #08604F / #E6F4F1</td></tr>
+<tr><td>Secundario</td><td><code>color/secondary/default · hover · pressed</code></td><td><span class="sw" style="background:#1B2A41"></span>#1B2A41 / #2B3A55 / #0F1B2D</td></tr>
+<tr><td>Acento</td><td><code>color/accent/default · hover · pressed</code></td><td><span class="sw" style="background:#FF7A45"></span>#FF7A45 / #FF8F66 / #E8622C</td></tr>
+<tr><td>Fondos</td><td><code>color/bg/page · surface · muted · inverse</code></td><td>#FAF8F3 / #FFFFFF / #F3EFE6 / #1B2A41</td></tr>
+<tr><td>Texto</td><td><code>color/text/primary · secondary · muted · on-primary · on-inverse</code></td><td>#1B2A41 / #374151 / #6B7280 / #FFFFFF / #FAF8F3</td></tr>
+<tr><td>Bordes e iconos</td><td><code>color/border/default · focus</code>, <code>color/icon/default · primary · on-primary</code></td><td>#E3DED3 / #0E8F76 …</td></tr></table>
+<p>Cada variable tiene su scope (fondo, texto, trazo…) y su <i>code syntax</i> web (<code>var(--color-primary-default)</code>).</p>
+
+<h3>2.2 Tipografía (colección Typography)</h3>
+<p>Encabezados en <b>Poppins</b> (SemiBold / Bold) y párrafos en <b>Inter</b> (Regular / Semi Bold). Las variables son <code>font/heading/family</code>, <code>font/body/family</code>, los estilos (<code>font/heading/style</code>, <code>font/body/style-strong</code>…), los tamaños <code>font/size/*</code> y las alturas de línea <code>font/line-height/*</code>.</p>
+<table><tr><th>Estilo de texto</th><th>Fuente</th><th>Tamaño / interlineado</th></tr>
+<tr><td>Display</td><td>Poppins Bold</td><td>56 / 64</td></tr><tr><td>Heading/H1</td><td>Poppins Bold</td><td>44 / 52</td></tr>
+<tr><td>Heading/H2</td><td>Poppins SemiBold</td><td>32 / 40</td></tr><tr><td>Heading/H3</td><td>Poppins SemiBold</td><td>24 / 32</td></tr>
+<tr><td>Body/Large</td><td>Inter Regular</td><td>18 / 28</td></tr><tr><td>Body/Regular · Strong</td><td>Inter Regular · Semi Bold</td><td>16 / 24</td></tr>
+<tr><td>Body/Small</td><td>Inter Regular</td><td>14 / 20</td></tr><tr><td>Caption</td><td>Inter Semi Bold</td><td>12 / 16</td></tr></table>
+<p>Los 9 estilos de texto de Figma tienen familia, estilo, tamaño y altura de línea <b>enlazados a esas variables</b>.</p>
+
+<h3>2.3 Espaciado, radios y grid (colección Spacing &amp; Grid)</h3>
+<p>Escala base <code>space/1…9</code> (4, 8, 12, 16, 24, 32, 48, 64, 96 px) y variables semánticas por eje:</p>
+<ul><li><b>Horizontal:</b> <code>spacing/horizontal/sm · md · lg</code> y <code>padding/horizontal/sm · md · lg</code>.</li>
+<li><b>Vertical:</b> <code>spacing/vertical/sm · md · lg · section</code> y <code>padding/vertical/sm · md · lg</code>.</li>
+<li><b>Radios:</b> <code>radius/sm · md · lg · full</code>. <b>Borde:</b> <code>border/width</code>.</li>
+<li><b>Grid:</b> <code>grid/columns</code> = 12, <code>grid/gutter</code> = 24, <code>grid/margin</code> = 80, <code>grid/max-width</code> = 1440.</li></ul>
+
+<h3>2.4 Iconos (colección Icon)</h3>
+<p>7 iconos de trazo (flecha, corazón, check, usuario, correo, llama y play) creados como componentes de 24 px. El color del trazo está enlazado a <code>color/icon/default</code>, el grosor a <code>icon/stroke</code> y el tamaño a <code>icon/size/sm · md · lg · xl</code> (16, 24, 32, 48). Al usarlos dentro de botones y tarjetas se recolorean con variables (<code>color/icon/on-primary</code>, <code>color/icon/primary</code>).</p>
+
+<h3>2.5 Componentes</h3>
+<table><tr><th>Componente</th><th>Variantes y propiedades</th><th>Variables que hereda</th></tr>
+<tr><td><b>Button</b></td><td>Tipo (Primary, Secondary, Accent) × Estado (Default, Hover, Pressed) = 9 variantes. Propiedades: <i>Label</i> (texto) y <i>Show icon</i> (booleano).</td><td>Relleno <code>color/{tipo}/{default|hover|pressed}</code>, texto, padding, gap, radio <code>radius/full</code>, estilo Body/Strong, icono <code>icon/size/md</code>.</td></tr>
+<tr><td><b>Input</b></td><td>Estado (Default, Focus, Filled) con etiqueta e icono. Propiedades: <i>Label</i> y <i>Value</i>.</td><td><code>color/border/default|focus</code>, <code>border/width</code>, <code>radius/md</code>, padding, estilos Body/Small y Body/Regular.</td></tr>
+<tr><td><b>Feature Card</b> (icono + texto)</td><td>Propiedades: <i>Title</i> y <i>Description</i>; el icono se cambia dentro de la instancia.</td><td><code>color/bg/surface</code>, <code>radius/lg</code>, <code>padding/*</code>, <code>icon/size/lg</code>, estilos Heading/H3 y Body/Regular.</td></tr></table>
+<p><b>Estados del botón:</b> hover y pressed no son colores sueltos sino variables propias (<code>…/hover</code>, <code>…/pressed</code>). En el prototipo, los botones principales cambian a esas variantes con las interacciones <i>On hover</i> y <i>While pressing</i>.</p>
+
+<h2>3. Uso del sistema en el prototipo</h2>
+<p>El prototipo está en la página <i>Prototipo</i>, con dos frames de 1440 px (ancho enlazado a <code>grid/max-width</code>).</p>
+<ul>
+<li><b>Página 1 – Landing:</b> navegación, hero con titular Display, bloque con cifra, tres <i>Feature Card</i>, banda CTA oscura y pie. Todos los botones son instancias de <i>Button</i>; las tarjetas son instancias de <i>Feature Card</i>.</li>
+<li><b>Página 2 – Registro:</b> titular, formulario con tres instancias de <i>Input</i> y botón principal de envío.</li>
+<li><b>Variables en pantallas:</b> los rellenos de fondo (<code>color/bg/*</code>), los textos (estilos de texto + <code>color/text/*</code>), los márgenes laterales (<code>grid/margin</code>), el gap de columnas (<code>grid/gutter</code>), los espacios verticales (<code>spacing/vertical/*</code>), los radios y los tamaños de icono están enlazados a variables. No hay valores fijos en colores ni tipografías.</li>
+<li><b>Efecto práctico:</b> si cambio <code>color/primary/default</code> en la colección Color, cambian a la vez los botones, los iconos de las tarjetas y el bloque verde del hero. Si cambio <code>grid/margin</code>, se mueven los márgenes de todas las secciones.</li>
+</ul>
+<h3>Interacción</h3>
+<p>En la landing, el botón <b>«Empezar ahora»</b> (y también «Crear mi cuenta» de la banda final) navega a la página de Registro (<i>On click → Navigate to</i>, transición Smart Animate de 0,3 s). En Registro, el botón «Volver al inicio» vuelve a la landing. El punto de inicio del flujo es la landing.</p>
+<div class="note"><b>Cómo probarlo:</b> abre el archivo en Figma, selecciona el frame «Landing» y pulsa <i>Present</i> (▶). Pasa el ratón por «Empezar ahora» para ver el estado hover, y haz clic para pasar a la página 2.</div>
+</body></html>
